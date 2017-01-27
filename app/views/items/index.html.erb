@@ -1,0 +1,23 @@
+<h4 class="column">Food Items</h4>
+<div class="column">
+  <ul class="items-grid no-bullet row">
+    <% @items.each do |item| %>
+      <li class="large-3 medium-4 small-12 column">
+        <div class="item-card padly">
+          <%= link_to item, class: "poster" do %>
+            <%= image_tag item.poster %>
+          <% end %>
+          <div class="item-info ell glassy-bg padmy padlx">
+            <div class="title">
+              <h6><%= item.title %> <span>(<%= item.release_year %>)</span></h6>
+            </div>
+            <p class="left price label item-label radius">$ <%= item.price %></p>
+            <%= link_to item.imdb, class: "right" do %>
+              <%= image_tag "imdb_logo.png" %>
+            <% end %>
+          </div>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>

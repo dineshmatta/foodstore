@@ -1,0 +1,14 @@
+// Index page style
+.items-grid {
+  .item-card {
+    width:220px;
+    margin:auto;
+    .poster img {
+      height: 325px;
+      width:100%;
+    }
+    .item-info {
+      .title { height: 4em; }
+    }
+  }
+}

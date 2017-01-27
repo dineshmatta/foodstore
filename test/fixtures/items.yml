@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  quantity: 1
+  price: 1
+  pincode: MyString
+  available_from: 2017-01-26
+  available_to: 2017-01-26
+  pickup_from: 2017-01-26 23:27:17
+  pickup_to: 2017-01-26 23:27:17
+  publish: false
+  user_id: 
+
+two:
+  name: MyString
+  quantity: 1
+  price: 1
+  pincode: MyString
+  available_from: 2017-01-26
+  available_to: 2017-01-26
+  pickup_from: 2017-01-26 23:27:17
+  pickup_to: 2017-01-26 23:27:17
+  publish: false
+  user_id: 

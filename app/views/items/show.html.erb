@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @item.name %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @item.quantity %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @item.price %>
+</p>
+
+<p>
+  <strong>Pincode:</strong>
+  <%= @item.pincode %>
+</p>
+
+<p>
+  <strong>Available from:</strong>
+  <%= @item.available_from %>
+</p>
+
+<p>
+  <strong>Available to:</strong>
+  <%= @item.available_to %>
+</p>
+
+<p>
+  <strong>Pickup from:</strong>
+  <%= @item.pickup_from %>
+</p>
+
+<p>
+  <strong>Pickup to:</strong>
+  <%= @item.pickup_to %>
+</p>
+
+<p>
+  <strong>Publish:</strong>
+  <%= @item.publish %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @item.user %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
