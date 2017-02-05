@@ -11,59 +11,74 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+  <div class="row">
+    <div class="large-6 columns">
+      <%= f.label :name, :class=> 'label' %><br>
+      <%= f.text_field :name %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :quantity %><br>
-    <%= f.number_field :quantity %>
+  <div class="row">
+    <div class="large-6 columns">
+      <%= f.label :quantity, :class=> 'label' %><br>
+      <%= f.number_field :quantity %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :price %><br>
-    <%= f.number_field :price %>
+  <div class="row">
+    <div class="large-6 columns">
+      <%= f.label :price, :class=> 'label' %><br>
+      <%= f.number_field :price %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :pincode %><br>
-    <%= f.text_field :pincode %>
+  <div class="row">
+    <div class="large-6 columns">
+      <%= f.label :pincode, :class=> 'label' %><br>
+      <%= f.text_field :pincode %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :available_from %><br>
-    <%= f.date_select :available_from %>
+  <div class="row">
+    <div class="large-6 columns">
+      <%= f.label :available_from, :class=> 'label' %><br>
+      <%= f.date_select :available_from %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :available_to %><br>
-    <%= f.date_select :available_to %>
+  <div class="row">
+    <div class="large-6 columns">
+      <%= f.label :available_to, :class=> 'label' %><br>
+      <%= f.date_select :available_to %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :pickup_from %><br>
-    <%= f.time_select :pickup_from %>
+  <div class="row">
+    <div class="large-6 columns">
+        <%= f.label :pickup_from, :class=> 'label' %><br>
+        <%= f.time_select :pickup_from %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :pickup_to %><br>
-    <%= f.time_select :pickup_to %>
+  <div class="row">
+    <div class="large-6 columns">
+      <%= f.label :pickup_to, :class=> 'label' %><br>
+      <%= f.time_select :pickup_to %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :image %>
-    <%= f.file_field :image %>
+  <div class="row">
+    <div class="large-6 columns">
+      <%= f.label :image, :class=> 'label' %>
+      <%= f.file_field :image %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :publish %><br>
-    <%= f.check_box :publish %>
-  </div>
-
-  <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.text_field :user_id %>
+  <div class="row">
+    <div class="large-6 columns">
+      <%= f.label :publish, :class=> 'label' %><br>
+      <%= f.check_box :publish %>
+    </div>
   </div>
   
   <div class="actions">

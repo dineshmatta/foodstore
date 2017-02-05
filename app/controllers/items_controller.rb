@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_item, only: [:show, :edit, :update, :destroy]
-
   respond_to :html
 
   def index
@@ -9,7 +9,9 @@ class ItemsController < ApplicationController
   end
 
   def show
+    @cart_action = @item.cart_action current_user.try :id
     respond_with(@item)
+    #@item = Item.find(params[:id])
   end
 
   def new
@@ -22,6 +24,7 @@ class ItemsController < ApplicationController
 
   def create
     @item = Item.new(item_params)
+    @item.user_id = current_user.id
     @item.save
     respond_with(@item)
   end
@@ -42,6 +45,6 @@ class ItemsController < ApplicationController
     end
 
     def item_params
-      params.require(:item).permit(:name, :quantity, :price, :pincode, :available_from, :available_to, :pickup_from, :pickup_to, :publish, :user_id)
+      params.require(:item).permit(:name, :quantity, :price, :pincode, :available_from, :available_to, :pickup_from, :pickup_to, :publish, :user_id, :description, :image)
     end
 end

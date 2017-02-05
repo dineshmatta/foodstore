@@ -1,0 +1,33 @@
+<!--   <div class="row">
+    <div class="large-16 columns" style="margin-top: 200px;">
+      <span class='label'> Search you Location</span><br>
+      <%= text_field_tag 'search'%>
+    </div>
+  </div> -->
+
+ <div class="home-content container">	
+ 	<h1 class="hero-title">Order for home made food from houses near you</h1>
+
+	<div class="home-search">
+		<div class="clearfix">
+			<div class="type-location-container">
+				<input google_autocomplete="" ng-model="vm.locationInput" ng-model-options="{ debounce: 250 }" ng-focus="vm.showDeliveryLocationTooltip = false;" ng-change="vm.locationInputChanged()" type="text" class="type-location ng-pristine ng-untouched ng-valid ng-empty" name="location" placeholder="Type delivery location (landmark, road or area)" autocomplete="off" spellcheck="false">
+				<span class="search-icon icon-swgy-magnifier"></span>
+				<div class="clear-input-container">
+					<span class="clear-input icon-swgy-cross" ng-click="vm.clearInput()"></span>
+				</div>
+				<!----><div class="locate-me" ng-click="vm.geoLocateMe()" data-gtm-element="home_1" ng-hide="vm.locateMeInProgress" ng-if="vm.hideLocateMe !== true">
+					<span class="locate-me-divider"></span>
+					<span class="locate-me-icon icon-swgy-pointer"></span>
+					<span class="locate-me-text">Locate Me</span>
+				</div><!---->
+				<!---->
+			</div>
+			<div class="show-restaurants" ng-switch="vm.showLoader || vm.redirecting" ng-click="vm.showErrorTooltip()" data-gtm-element="home_2">
+				<!---->
+				<!----><span ng-switch-default="">SHOW RESTAURANTS</span><!---->
+			</div>
+		</div>
+	</div>
+
+</div>

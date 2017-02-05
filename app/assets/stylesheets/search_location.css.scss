@@ -1,0 +1,142 @@
+// Place all the styles related to the SearchLocation controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.home-content {
+    padding-top: 120px;
+    padding-bottom: 160px;
+    min-height: 460px;
+}
+
+@media (min-width: 992px){
+    .home-content {
+        padding-bottom: 400px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 970px;
+    }
+}
+
+.home-search {
+    width: 700px;
+    border-radius: 3px;
+    margin: 40px auto 150px;
+    position: relative;
+}
+
+.hero-title {
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    text-shadow: 1px 1px 4px rgba(0,0,0,.8);
+}
+
+.h1, h1 {
+    font-size: 36px;
+}
+
+.type-location-container {
+    position: relative;
+    float: left;
+    width: 500px;
+}
+
+.type-location {
+    padding: 20px 110px 20px 50px;
+    background: #fff;
+    width: 500px;
+    height: 54px;
+    border: 0;
+    outline: 0;
+    color: #3e4152;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    border-radius: 3px 0 0 3px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 18px;
+    top: 19px;
+    font-size: 14px;
+    color: #686b78;
+}
+
+[class*=" icon-"], [class^=icon-] {
+    font-family: swgy-icon;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    -webkit-font-feature-settings: normal;
+    -moz-font-feature-settings: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.clear-input-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+    display: none;
+    color: #686b78;
+}
+
+.locate-me-divider {
+    display: none;
+}
+
+.locate-me-icon {
+    position: relative;
+    top: 10px;
+    right: 3px;
+}
+
+.locate-me-text {
+    top: 9px;
+    position: relative;
+    font-weight: 700;
+}
+
+.locate-me {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+    color: rgba(104,107,120,.8);
+    vertical-align: middle;
+    height: 34px;
+    padding: 0 10px;
+    margin: 1px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.show-restaurants {
+    width: 200px;
+    height: 37px;
+    background-color: #fc8019;
+    padding: 11px;
+    float: left;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 0 3px 3px 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}

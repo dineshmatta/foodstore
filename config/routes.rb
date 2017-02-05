@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  get 'search_location/index'
+
   get 'carts/show'
 
-  devise_for :users, path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
-  resources :items, only: [:show, :index]
+  devise_for :users, path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }, :controllers => { registrations: 'registrations' }
+  resources :items
   resource :cart, only: [:show] do
     put 'add/:item_id', to: 'carts#add', as: :add_to
     put 'remove/:item_id', to: 'carts#remove', as: :remove_from
@@ -11,7 +13,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'items#index'
+  root 'search_location#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p>
 
 <p>
   <strong>Name:</strong>
@@ -48,7 +48,31 @@
 <p>
   <strong>User:</strong>
   <%= @item.user %>
-</p>
+</p> -->
 
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>
+
+<div class="large-3 small-12 column">
+  <%=image_tag @item.image%>
+</div>
+<div class="large-9 small-12 column">
+  <h3>
+    <%= @item.name %>
+    (<%= @item.available_from %> - <%= @item.available_to %>)
+    <%#=link_to @item.imdb do%>
+      <%#=image_tag ("imdb_logo.png")%>
+    <%#end%>
+  </h3>
+  <p class="label item-label radius mb1">$ <%= @item.price %></p>
+
+  <p><%= @item.description %></p>
+
+  <%if signed_in?%>
+    <%=link_to "", class: "button", data: {target: @cart_action, addUrl: add_to_cart_path(@item), removeUrl: remove_from_cart_path(@item)} do%>
+      <i class="fi-shopping-cart"></i>
+      <span><%=@cart_action%></span> Cart
+    <%end%>
+  <%end%>
+</div>
+

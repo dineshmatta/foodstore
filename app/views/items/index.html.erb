@@ -4,17 +4,18 @@
     <% @items.each do |item| %>
       <li class="large-3 medium-4 small-12 column">
         <div class="item-card padly">
-          <%= link_to item, class: "poster" do %>
-            <%= image_tag item.poster %>
+          <%= link_to item, class: "poster1" do %>
+            <%= image_tag item.image %>
+            <%#=image_tag(item.image_url(:thumb).to_s)%>
           <% end %>
           <div class="item-info ell glassy-bg padmy padlx">
             <div class="title">
-              <h6><%= item.title %> <span>(<%= item.release_year %>)</span></h6>
+              <h6><%= item.name %> <span>(<%= item.quantity %>)</span></h6>
             </div>
             <p class="left price label item-label radius">$ <%= item.price %></p>
-            <%= link_to item.imdb, class: "right" do %>
-              <%= image_tag "imdb_logo.png" %>
-            <% end %>
+            <%#= link_to item.available_from, class: "right" do %>
+              <%#= image_tag "imdb_logo.png" %>
+            <%# end %>
           </div>
         </div>
       </li>
