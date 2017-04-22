@@ -34,8 +34,8 @@ gem 'mini_magick' # For different versions of an image
 
 ##http://stackoverflow.com/questions/16669991/most-of-my-assets-suddenly-return-404-after-a-push-to-heroku
 
-gem 'rails_serve_static_assets'
-gem 'rails_stdout_logging'
+# gem 'rails_serve_static_assets'
+# gem 'rails_stdout_logging'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
