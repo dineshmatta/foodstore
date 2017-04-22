@@ -29,6 +29,7 @@ gem 'hiredis', '~> 0.4.5'
 gem 'spring', group: :development
 
 gem 'carrierwave', '~> 1.0'
+gem 'pg'
 gem 'mini_magick' # For different versions of an image
 
 # Use ActiveModel has_secure_password
